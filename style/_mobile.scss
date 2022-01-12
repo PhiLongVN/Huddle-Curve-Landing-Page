@@ -1,0 +1,118 @@
+@media screen and (max-width: 767.98px) {
+  /* ---------------------------------- .sec1 --------------------------------- */
+  // .sec1-number
+  .sec1-number {
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  /* ---------------------------------- .sec2 --------------------------------- */
+  .sec2-block {
+    text-align: center;
+    flex-direction: column;
+
+    img {
+      width: 60%;
+    }
+  }
+
+  /* ---------------------------------- .foot --------------------------------- */
+  .foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .email-input {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    input {
+      align-self: flex-end;
+    }
+
+    button {
+      align-self: flex-end;
+    }
+  }
+}
+
+@media screen and (max-width: 555px) {
+  /* ---------------------------------- .head --------------------------------- */
+  .head {
+    padding: 1rem;
+  }
+
+  /* ---------------------------------- .sec1 --------------------------------- */
+  .sec1 {
+    padding: 2rem;
+    padding-bottom: 7rem;
+  }
+
+  /* ---------------------------------- .sec2 --------------------------------- */
+  .sec2-block {
+    padding: 2rem;
+
+    img {
+      width: 70%;
+    }
+  }
+  // 1
+  .block1 {
+    background: #f6fbff;
+    padding-bottom: 4rem;
+  }
+
+  // 2
+  .block2 {
+    padding: 7rem 2rem;
+    padding-bottom: 10rem;
+  }
+
+  // 4
+  .block4 {
+    padding: 12rem 4rem;
+  }
+
+  /* ---------------------------------- .foot --------------------------------- */
+  .foot {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  /* ---------------------------------- .head --------------------------------- */
+  .head {
+    button {
+      min-width: 120px;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .sec2-block {
+    img {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 319.98px) {
+  /* ---------------------------------- .head --------------------------------- */
+  .head {
+    button {
+      min-width: 100px;
+      padding: 0.5rem 0.5rem;
+    }
+  }
+  /* ---------------------------------- .sec2 --------------------------------- */
+  .block4 {
+    button {
+      min-width: 200px;
+      padding: 0.5rem 1.5rem;
+    }
+  }
+}

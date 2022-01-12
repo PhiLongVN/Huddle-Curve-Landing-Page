@@ -1,0 +1,667 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:ital,wght@0,400;0,600;1,400;1,600&family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&family=Barlow:ital,wght@0,400;0,600;1,400;1,600&family=Commissioner:wght@400;500;700;800&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,wght@0,700;0,900;1,700;1,900&family=Inter:wght@400;700&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&family=Manrope:wght@600;800&family=Montserrat:ital,wght@0,700;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,500;1,700&family=Outfit:wght@300;400;600&family=Overpass:ital,wght@0,300;0,600;1,300;1,600&family=Poppins:ital,wght@0,700;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body:not(strong) {
+  font-family: "Raleway", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+}
+
+/* ========================================================================== */
+/*                                    .HEAD                                   */
+/* ========================================================================== */
+.head {
+  padding: 3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.head button {
+  min-width: 140px;
+  padding: 0.5rem 2rem;
+  border-radius: 100px;
+  outline: none;
+  color: #ee42af;
+  background: white;
+  border: 2px solid #e22b9f;
+  cursor: pointer;
+}
+
+.head button:hover {
+  opacity: 0.8;
+}
+
+.head-logo {
+  min-width: 100px;
+  min-height: 30px;
+}
+
+/* ========================================================================== */
+/*                                    .SEC1                                   */
+/* ========================================================================== */
+.sec1 {
+  padding: 5rem;
+  padding-bottom: 7rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+  background-image: url(../images/bg-section-top-desktop-1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.sec1-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.sec1-title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+
+.sec1-title p {
+  max-width: 50ch;
+  font-weight: 600;
+}
+
+.sec1-title button {
+  padding: 0.5rem 3rem;
+  border-radius: 100px;
+  outline: none;
+  color: white;
+  background: #e432a3;
+  border: 2px solid #ec2ea7;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.224);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.224);
+}
+
+.sec1-title button:hover {
+  opacity: 0.8;
+}
+
+.sec1-number {
+  width: 100%;
+  padding: 3rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.sec1-number .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sec1-number .number strong {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  color: black;
+}
+
+.sec1-number .number span {
+  width: 100%;
+  opacity: 0.7;
+  text-align: center;
+}
+
+/* ========================================================================== */
+/*                                    .SEC2                                   */
+/* ========================================================================== */
+.sec2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sec2-block {
+  padding: 4rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 4rem;
+}
+
+.sec2-block img {
+  width: 50%;
+}
+
+.sec2-block .block-text h3 {
+  font-size: 1.5rem;
+}
+
+.sec2-block .block-text p {
+  padding: 1rem 0;
+  font-weight: 600;
+  color: #445358;
+}
+
+.block1 {
+  background: #f6fbff;
+  padding-bottom: 4rem;
+}
+
+.block2 {
+  padding: 15rem 4rem;
+  padding-bottom: 10rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-image: url(../images/bg-section-bottom-desktop-1.svg), url(../images/bg-section-top-desktop-2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top, bottom;
+}
+
+.block3 {
+  background: #f6fbff;
+}
+
+.block4 {
+  padding: 12rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../images/bg-section-bottom-desktop-2.svg), url(../images/bg-footer-top-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top, bottom;
+}
+
+.block4 h3 {
+  font-size: 2rem;
+}
+
+.block4 button {
+  padding: 0.8rem 3rem;
+  border-radius: 100px;
+  background: #f15cbb;
+  color: white;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.238);
+          box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.238);
+  cursor: pointer;
+}
+
+.block4 button:hover {
+  opacity: 0.8;
+}
+
+/* ========================================================================== */
+/*                                   FOOTER                                   */
+/* ========================================================================== */
+.foot {
+  width: 100%;
+  padding: 4rem;
+  background: #00252e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.foot-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  color: rgba(255, 255, 255, 0.911);
+}
+
+.foot-info img {
+  -webkit-filter: brightness(0%) invert(1);
+          filter: brightness(0%) invert(1);
+}
+
+.foot-info span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.foot-info .info-icon {
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.foot-info .info-icon a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  color: #00252e;
+  background: white;
+}
+
+.foot-info .info-icon a:hover {
+  color: #00cafb;
+}
+
+.foot-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  color: rgba(255, 255, 255, 0.898);
+}
+
+.foot-email h4 {
+  font-size: 1.5rem;
+}
+
+.foot-email .email-input {
+  width: 100%;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  position: relative;
+  /* ---------------------------------- error --------------------------------- */
+  /* ----------------------------------- cc ----------------------------------- */
+}
+
+.foot-email .email-input.active span {
+  opacity: 1;
+}
+
+.foot-email .email-input.active input {
+  border: 2px solid rgba(255, 0, 0, 0.844);
+}
+
+.foot-email .email-input input {
+  max-width: 400px;
+  min-width: 230px;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid #00252e00;
+  border-radius: 10px;
+}
+
+.foot-email .email-input input:focus {
+  border: 2px solid #ff03dd;
+}
+
+.foot-email .email-input button {
+  padding: 0.6rem 2rem;
+  border-radius: 10px;
+  background: #ff8ed6;
+  color: white;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.foot-email .email-input button:hover {
+  opacity: 0.8;
+}
+
+.foot-email .email-input span {
+  position: absolute;
+  left: 0%;
+  top: 130%;
+  font-size: 0.8rem;
+  color: rgba(255, 0, 0, 0.844);
+  font-weight: 700;
+  opacity: 0;
+}
+
+@media screen and (max-width: 767.98px) {
+  /* ---------------------------------- .sec1 --------------------------------- */
+  .sec1-number {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 6rem;
+  }
+  /* ---------------------------------- .sec2 --------------------------------- */
+  .sec2-block {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sec2-block img {
+    width: 60%;
+  }
+  /* ---------------------------------- .foot --------------------------------- */
+  .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .email-input {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .email-input input {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .email-input button {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  /* ---------------------------------- .head --------------------------------- */
+  .head {
+    padding: 1rem;
+  }
+  /* ---------------------------------- .sec1 --------------------------------- */
+  .sec1 {
+    padding: 2rem;
+    padding-bottom: 7rem;
+  }
+  /* ---------------------------------- .sec2 --------------------------------- */
+  .sec2-block {
+    padding: 2rem;
+  }
+  .sec2-block img {
+    width: 70%;
+  }
+  .block1 {
+    background: #f6fbff;
+    padding-bottom: 4rem;
+  }
+  .block2 {
+    padding: 7rem 2rem;
+    padding-bottom: 10rem;
+  }
+  .block4 {
+    padding: 12rem 4rem;
+  }
+  /* ---------------------------------- .foot --------------------------------- */
+  .foot {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  /* ---------------------------------- .head --------------------------------- */
+  .head button {
+    min-width: 120px;
+    padding: 0.5rem 1rem;
+  }
+  .sec2-block img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 319.98px) {
+  /* ---------------------------------- .head --------------------------------- */
+  .head button {
+    min-width: 100px;
+    padding: 0.5rem 0.5rem;
+  }
+  /* ---------------------------------- .sec2 --------------------------------- */
+  .block4 button {
+    min-width: 200px;
+    padding: 0.5rem 1.5rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
