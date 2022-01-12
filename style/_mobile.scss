@@ -23,20 +23,27 @@
     justify-content: center;
     flex-direction: column-reverse;
   }
+  .foot-email {
+    .email-input {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      flex-direction: column;
 
-  .email-input {
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    flex-direction: column;
+      input {
+        align-self: flex-end;
+      }
 
-    input {
-      align-self: flex-end;
-    }
+      button {
+        align-self: flex-end;
+      }
 
-    button {
-      align-self: flex-end;
+      span {
+        left: unset;
+        right: 0%;
+        top: 100%;
+      }
     }
   }
 }

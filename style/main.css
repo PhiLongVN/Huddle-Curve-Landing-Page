@@ -581,7 +581,7 @@ h4 {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .email-input {
+  .foot-email .email-input {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -597,13 +597,18 @@ h4 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .email-input input {
+  .foot-email .email-input input {
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
-  .email-input button {
+  .foot-email .email-input button {
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+  .foot-email .email-input span {
+    left: unset;
+    right: 0%;
+    top: 100%;
   }
 }
 
